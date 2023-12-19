@@ -1,7 +1,13 @@
+/*v4*/
  main_v4.cpp Led.cpp -g
  .\a.exe
-///
 gdb a.exe  
 start
 disassemble /s
 quit
+
+/*v5*/
+main_v5.cpp Led.cpp Date.cpp -g
+/*v6*/
+c++ insight 
+main_v6.cpp Ledv6.cpp Date.cpp  -o outputv6
