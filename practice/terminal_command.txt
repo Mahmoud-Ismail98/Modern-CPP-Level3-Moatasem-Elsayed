@@ -1,0 +1,7 @@
+ main_v4.cpp Led.cpp -g
+ .\a.exe
+///
+gdb a.exe  
+start
+disassemble /s
+quit
