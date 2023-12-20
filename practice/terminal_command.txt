@@ -37,6 +37,13 @@ main_v7.cpp:12:19: error: passing 'const Led' as 'this' argument discards qualif
    12 |     ledgreen.print();    
 
 
+/*v8*/
+g++ main_v8.cpp Ledv8.cpp Date.cpp  -o outputv8
+
+when try to intialize and define static at the same time 
+Ledv8.hpp:13:16: error: ISO C++ forbids in-class initialization of non-const static member 'Led::Number'
+   13 |     static int Number=99;
+
 
 
 
