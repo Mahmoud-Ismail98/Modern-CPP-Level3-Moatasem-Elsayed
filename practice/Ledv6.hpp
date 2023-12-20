@@ -6,8 +6,8 @@ class Led
 {
 public:
     void print();
-    //Led() = default;    //do nothing
-    Led()=delete; //delete to prevent use that constructor and generate error
+    Led() = default;    //do nothing
+    //Led()=delete; //delete to prevent use that constructor and generate error
     Led(const Led &led)=default;  //copy constructor
     /*
         that will be happen behind the sence

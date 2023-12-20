@@ -30,4 +30,5 @@ void Led::print()
 {
      std::cout<<"Hello led\n"<<std::endl;
      std::cout<<"copy coustractor "<<pin_num<<"  "<<pin_count<<" "<<state<<std::endl;
+
 }

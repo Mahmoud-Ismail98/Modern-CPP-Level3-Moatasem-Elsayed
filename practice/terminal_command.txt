@@ -10,4 +10,34 @@ quit
 main_v5.cpp Led.cpp Date.cpp -g
 /*v6*/
 c++ insight 
-main_v6.cpp Ledv6.cpp Date.cpp  -o outputv6
+g++ main_v6.cpp Ledv6.cpp Date.cpp  -o outputv6
+
+main_v6.cpp: In function 'int main()':
+main_v6.cpp:10:9: error: use of deleted function 'Led::Led()'
+   10 |     Led ledblack;
+      |         ^~~~~~~~
+In file included from main_v6.cpp:2:
+Ledv6.hpp:10:5: note: declared here
+   10 |     Led()=delete; //delete to prevent use that constructor and generate error
+/*v7*/
+g++ main_v7.cpp Ledv7.cpp   -o outputv6
+
+error: assignment of read-only member 'Led::x'
+   11 |     this->x=x;
+
+
+Ledv7.hpp:16:15: note: 'const int Led::x' should be initialized
+   16 |     const int x;
+
+Ledv7.cpp:6:6: error: assignment of read-only member 'Led::x'
+    6 |     x=50;
+
+main_v7.cpp: In function 'int main()':
+main_v7.cpp:12:19: error: passing 'const Led' as 'this' argument discards qualifiers [-fpermissive]
+   12 |     ledgreen.print();    
+
+
+
+
+
+
