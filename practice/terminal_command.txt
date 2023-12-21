@@ -44,7 +44,17 @@ when try to intialize and define static at the same time
 Ledv8.hpp:13:16: error: ISO C++ forbids in-class initialization of non-const static member 'Led::Number'
    13 |     static int Number=99;
 
+when try access private or busblic member is tatic method related to the class 
+but can acces static member
+edv8.cpp: In static member function 'static void Led::sayHello(int)':
+Ledv8.cpp:21:5: error: invalid use of member 'Led::pin_count' in static member function
+   21 |     pin_count=50;
 
+/*v9*/
 
+main_v9.cpp:8:12: note:   'LCD' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>'
+    8 |     l1 =l1+msg;   
+    
+g++ main_v9.cpp LCDv9.cpp   -o outputv9
 
 
