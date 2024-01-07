@@ -20,6 +20,9 @@ std::string LCD::getText()
 
 LCD& LCD::operator -(std::string msg)
 {
+ //text=text-msg-->error as inside string not found subtract
+
+ //first argument of erase find the find the position of first element of msg (hello)--h is 9  
   text=text.erase(text.find(msg),msg.length());
    return *this; 
 }
@@ -30,8 +33,10 @@ std::string LCD::operator+(std::string msg)
     return text;
 }
 */
+/*LCD & because i want to return in class from lcd  */
 LCD & LCD::operator+(std::string msg)
 {
+    //or this->text
     text =text + " "+msg+" is done\n";
-    return *this; //return what LCD contain
+    return *this; //return what LCD contain because this point on lcd 
 }

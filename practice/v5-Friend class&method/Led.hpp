@@ -14,8 +14,7 @@ private:
     int  pin_num;    
     int  pin_count;
     bool state ;
-
-    friend void friend_fun(void);
+   friend void friend_fun(void);
 };
 
 #endif

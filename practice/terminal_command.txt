@@ -7,7 +7,7 @@ disassemble /s
 quit
 
 /*v5*/
-main_v5.cpp Led.cpp Date.cpp -g
+g++ main_v5.cpp Led.cpp Date.cpp -g
 /*v6*/
 c++ insight 
 g++ main_v6.cpp Ledv6.cpp Date.cpp  -o outputv6
