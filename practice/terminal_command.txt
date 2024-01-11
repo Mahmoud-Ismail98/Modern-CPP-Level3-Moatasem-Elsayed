@@ -58,3 +58,10 @@ main_v9.cpp:8:12: note:   'LCD' is not derived from 'std::__cxx11::basic_string<
 g++ main_v9.cpp LCDv9.cpp   -o outputv9
 
 
+/*v10*/
+ain_v10.cpp:24:13: error: no match for 'operator<' (operand types are 'Segment' and 'int')
+   24 |     if(seg1 <9 )
+      |        ~~~~ ^~
+      |        |     |
+      |        Segment
+g++ main_v10.cpp LCDv10.cpp Segment.cpp  -o outputv10
