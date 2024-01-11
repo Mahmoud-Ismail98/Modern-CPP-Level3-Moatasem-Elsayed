@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Ledv7.hpp"
+
+
 int main(void)
 {
     Led ledblue(20,21,0,50);
@@ -7,7 +9,7 @@ int main(void)
     ledblue.Display();
     const Led ledgreen;
     ledgreen.Display();
-    //ledgreen.print();
+    ledgreen.print();
     return 0;
 
 }

@@ -15,8 +15,6 @@ public:
 private:
     std::string text;
     int raw;
-
-
 };
 
 #endif
